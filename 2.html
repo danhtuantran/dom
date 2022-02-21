@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Xin chào:</h1>
+    <h1 id="ten1"></h1>
+    <h1>Quê quán:</h1>
+    <h1 id="qq1"></h1>
+
+    <h1 id="ht"></h1>
+    <input type="text" id="ten"> 
+    <input type="text" id="qq">
+    <button onclick="ht()">Nhập</button>
+    <script>
+        function ht() {
+            let ten = document.getElementById("ten").value;
+            let qq = document.getElementById("qq").value;
+            document.getElementById("ten1").innerHTML=ten;
+            document.getElementById("qq1").innerHTML=qq;
+            document.getElementById("ht").innerHTML="XiN chào "+ten+" <br>Quê quán: "+qq;
+        }
+    </script>
+</body>
+</html>

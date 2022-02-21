@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="ht">Kết quả là:</h1>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <button id="cong" onclick="cong()">Cộng</button>
+    <button id="tru" onclick="tru()">Trừ</button>
+    <button id="nhan" onclick="nhan()">Nhân</button>
+    <button id="chia" onclick="chia()">Chia</button>
+
+    <script>
+
+        function cong() {
+            let a1 = +document.getElementById("a").value;
+            let b1 = +document.getElementById("b").value;
+            document.getElementById("ht").innerHTML = a1 + b1;
+        }
+        function tru() {
+            let a1 = +document.getElementById("a").value;
+            let b1 = +document.getElementById("b").value;
+            document.getElementById("ht").innerHTML = a1 - b1;
+        }
+        function nhan() {
+            let a1 = +document.getElementById("a").value;
+            let b1 = +document.getElementById("b").value;
+            document.getElementById("ht").innerHTML = a1 * b1;
+        }
+        function chia() {
+            let a1 = +document.getElementById("a").value;
+            let b1 = +document.getElementById("b").value;
+            document.getElementById("ht").innerHTML = a1 / b1;
+        }
+    </script>
+</body>
+
+</html>
